@@ -22,9 +22,9 @@ const Navbar = () => {
           <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
             <GraduationCap className="h-6 w-6 text-primary-foreground" />
           </div>
-          <div className="hidden sm:block">
-            <p className="text-sm font-bold leading-tight text-foreground">HOMABAY COLLEGE</p>
-            <p className="text-[10px] font-medium leading-tight text-muted-foreground">FOR PROFESSIONAL STUDIES</p>
+          <div>
+            <p className="text-xs font-bold leading-tight text-foreground sm:text-sm">HOMABAY COLLEGE</p>
+            <p className="text-[8px] font-medium leading-tight text-muted-foreground sm:text-[10px]">FOR PROFESSIONAL STUDIES</p>
           </div>
         </Link>
 
