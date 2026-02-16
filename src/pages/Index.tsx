@@ -153,6 +153,52 @@ const Index = () => (
       </div>
     </section>
 
+    {/* Testimonials */}
+    <section className="section-padding">
+      <div className="container mx-auto">
+        <AnimatedSection className="text-center">
+          <span className="text-sm font-semibold uppercase tracking-wider text-secondary">Student Voices</span>
+          <h2 className="mt-2 text-3xl font-bold text-foreground md:text-4xl">Success Stories</h2>
+          <p className="mx-auto mt-3 max-w-lg text-muted-foreground">
+            Hear from our students and graduates about their experience at Homabay College.
+          </p>
+        </AnimatedSection>
+
+        <div className="mt-12 grid gap-6 md:grid-cols-3">
+          {[
+            {
+              name: "Faith Achieng",
+              course: "Diploma in Business Management",
+              quote: "The practical training I received here gave me the confidence to start my own business. The lecturers are supportive and the KNEC certification opened many doors for me.",
+            },
+            {
+              name: "Kevin Otieno",
+              course: "Craft in ICT",
+              quote: "I chose Homabay College because of their TVETA license and affordable fees. The hands-on ICT training prepared me well for the job market. I now work as an IT support specialist.",
+            },
+            {
+              name: "Grace Wambui",
+              course: "Diploma in Human Resource Management",
+              quote: "The flexible payment plans made it possible for me to pursue my diploma. The knowledge I gained here has been invaluable in my career growth in HR.",
+            },
+          ].map((t, i) => (
+            <AnimatedSection key={t.name} delay={i * 0.1}>
+              <Card className="card-elevated border-0 h-full">
+                <CardContent className="flex flex-col p-6">
+                  <div className="mb-4 text-secondary text-3xl font-serif">"</div>
+                  <p className="text-sm text-muted-foreground italic flex-1">{t.quote}</p>
+                  <div className="mt-6 border-t border-border pt-4">
+                    <p className="font-semibold text-foreground">{t.name}</p>
+                    <p className="text-xs text-muted-foreground">{t.course}</p>
+                  </div>
+                </CardContent>
+              </Card>
+            </AnimatedSection>
+          ))}
+        </div>
+      </div>
+    </section>
+
     {/* CTA */}
     <section className="section-padding">
       <div className="container mx-auto">
