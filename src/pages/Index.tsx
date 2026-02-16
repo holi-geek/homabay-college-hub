@@ -55,7 +55,7 @@ const Index = () => (
                 Enroll Now <ArrowRight className="ml-2 h-4 w-4" />
               </a>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
+            <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 font-semibold">
               <Link to="/courses">View Courses</Link>
             </Button>
           </div>
